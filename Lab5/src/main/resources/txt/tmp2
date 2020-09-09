@@ -1,0 +1,9 @@
+//A set of vowels to use
+val vowels = Set('5', '6', '7', '8', '9')
+
+//A function that counts the vowels in a name
+def countVowels(name: String) = name.count(l => vowels.contains(l.toLower))
+
+//Sorts by the number of vowels
+names.sortBy(countVowels)
+//result is: List(Kathryn, Beth, Serin, Allie, Alana)
